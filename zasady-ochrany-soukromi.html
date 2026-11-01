@@ -1,0 +1,128 @@
+<!doctype html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zásady ochrany soukromí | Lhocan Gmail</title><meta name="robots" content="noindex"><link rel="stylesheet" href="styl.css"></head><body><main>
+<p><a href="index.html">← Lhocan Gmail</a></p>
+<h1>Zásady ochrany soukromí – aplikace Lhocan Gmail</h1>
+        <p class="meta">Platné od 1. 11. 2026</p>
+
+        <h2>Provozovatel</h2>
+        <p>
+          Marek Dibelka, kontakt 
+          <a href="mailto:marekdibelka@gmail.com">marekdibelka@gmail.com</a>.
+        </p>
+
+        <h2>Účel aplikace</h2>
+        <p>
+          Lhocan Gmail je soukromý nástroj provozovatele pro správu jeho vlastní schránky Gmail.
+          Není nabízen veřejnosti a nepřipojují se k němu žádní další uživatelé. Jediný účet Google,
+          ke kterému aplikace přistupuje, je účet provozovatele.
+        </p>
+
+        <h2>Jaká data z účtu Google aplikace používá</h2>
+        <ul>
+          <li>
+            <code>gmail.readonly</code> – čtení zpráv a jejich příloh: ranní přehled doručené pošty za
+            posledních 24 hodin, přečtení konkrétní zprávy nebo uložení přílohy na pokyn provozovatele,
+            příprava návrhu odpovědi a kontrola složky Odeslané, zda byl schválený e-mail odeslán.
+          </li>
+          <li>
+            <code>gmail.send</code> – odeslání e-mailu, a to pouze té verze konceptu, kterou provozovatel
+            předem výslovně schválil.
+          </li>
+        </ul>
+        <p>Aplikace zprávy nemaže, nearchivuje, neoznačuje ani jinak nemění.</p>
+
+        <h2>Uložení a ochrana</h2>
+        <ul>
+          <li>
+            Přístupové tokeny jsou uloženy na soukromém serveru provozovatele v souborech přístupných
+            jen správci; oprávnění ke čtení a k odesílání jsou oddělená. Komunikace s Google probíhá
+            šifrovaně (HTTPS).
+          </li>
+          <li>
+            Obsah zpráv použitý pro ranní přehled se po jeho vytvoření ze serveru maže. Pro navazující
+            odpovědi se uchovává jen seznam hlaviček (odesílatel, předmět, identifikátor) z posledního přehledu.
+          </li>
+          <li>
+            Zprávy, které si provozovatel výslovně nechá přečíst nebo shrnout, mohou zůstat v záznamech jeho
+            soukromých relací asistenta na témže serveru.
+          </li>
+          <li>
+            Koncepty e-mailů, záznamy o jejich schválení a odeslání a přílohy uložené na pokyn provozovatele
+            zůstávají na serveru provozovatele jako jeho pracovní záznamy.
+          </li>
+        </ul>
+
+        <h2>Komu se data předávají</h2>
+        <ul>
+          <li>
+            K sestavení přehledu, shrnutí zprávy na pokyn provozovatele a návrhu odpovědí se text zpráv předává jazykovým modelům poskytovatelů
+            AI (Anthropic a OpenAI), a to výhradně pro tento účel a pro provozovatele.
+          </li>
+          <li>
+            Přehled a náhledy konceptů se provozovateli doručují do jeho soukromé konverzace v aplikaci Telegram.
+          </li>
+          <li>
+            Data se neprodávají, nepoužívají k reklamě ani nepředávají nikomu dalšímu. Provozovatel je
+            nepoužívá k vývoji, zlepšování ani trénování obecných modelů umělé inteligence.
+          </li>
+        </ul>
+
+        <h2>Soulad s pravidly Google</h2>
+        <p>
+          Použití a předávání informací získaných z Google API se řídí 
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noreferrer">
+            Google API Services User Data Policy
+          </a>
+          , včetně požadavků Limited Use.
+        </p>
+
+        <h2>Zrušení přístupu</h2>
+        <p>
+          Přístup aplikace lze kdykoli odebrat na 
+          <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">
+            myaccount.google.com/permissions
+          </a>
+          . Provozovatel může přístup zrušit také přímo na serveru; tokeny se tím u Google zneplatní a ze
+          serveru smažou.
+        </p>
+
+        <hr />
+        <h2 id="english">Privacy Policy – Lhocan Gmail (English summary)</h2>
+        <p>
+          Lhocan Gmail is a private tool used only by its operator, Marek Dibelka
+          (marekdibelka@gmail.com), for his own Gmail account. It is not offered to the public.
+        </p>
+        <ul>
+          <li>
+            Scopes: <code>gmail.readonly</code> (daily inbox summary, reading a specific message or saving
+            an attachment on the operator&#39;s request, drafting replies, checking Sent mail) and 
+            <code>gmail.send</code> (sending only a draft version the operator explicitly approved).
+            The app never deletes, archives, labels or modifies messages.
+          </li>
+          <li>
+            Tokens are stored on the operator&#39;s private server with access restricted to the
+            administrator; traffic to Google uses HTTPS. Message content used for the summary is deleted
+            after processing; only header metadata of the latest summary, drafts and send records are kept. Messages the operator explicitly asks to read may remain in his private assistant session logs on the same server.
+          </li>
+          <li>
+            Message text is processed by AI language model providers (Anthropic, OpenAI) solely to produce
+            the summary and reply drafts for the operator, and delivered to the operator&#39;s private
+            Telegram chat. Data is not sold, not used for advertising, not shared with anyone else and
+            not used to develop, improve or train generalized AI models.
+          </li>
+          <li>
+            Use of information received from Google APIs adheres to the 
+            <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noreferrer">
+              Google API Services User Data Policy
+            </a>
+            , including the Limited Use requirements.
+          </li>
+          <li>
+            Access can be revoked at any time at 
+            <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">
+              myaccount.google.com/permissions
+            </a>
+            ; tokens are then deleted from the server.
+          </li>
+        </ul>
+      </main></body></html>
